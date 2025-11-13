@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community on Blowfish</title>
+    <link>http://localhost:1313/tags/community/</link>
+    <description>Recent content in Community on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>leojordansson@gmail.com (Cloud Native Wermland)</managingEditor>
+    <webMaster>leojordansson@gmail.com (Cloud Native Wermland)</webMaster>
+    <copyright>© 2025 Cloud Native Wermland</copyright>
+    <lastBuildDate>Mon, 10 Nov 2025 18:00:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>November Event 2025</title>
+      <link>http://localhost:1313/posts/nov-meetup/</link>
+      <pubDate>Mon, 10 Nov 2025 18:00:00 +0100</pubDate>
+      <author>leojordansson@gmail.com (Cloud Native Wermland)</author>
+      <guid>http://localhost:1313/posts/nov-meetup/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

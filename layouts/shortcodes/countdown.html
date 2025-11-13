@@ -1,0 +1,223 @@
+{{ $uniqueId := printf "countdown-%d" now.Unix }}
+{{ $title := .Get "title" }}
+{{ $date := .Get "date" }}
+{{ $timezone := .Get "timezone" | default "local" }}
+{{ $link := .Get "link" }}
+{{ $linkText := .Get "linkText" | default "Event Details" }}
+
+<div id="{{ $uniqueId }}" class="countdown-container">
+  {{ if $title }}
+  <h2 class="countdown-title">{{ $title }}</h2>
+  {{ end }}
+  
+  <div class="countdown-timer">
+    <div class="countdown-display"></div>
+  </div>
+  
+  {{ if $link }}
+  <div class="countdown-link">
+    <a href="{{ $link }}" class="countdown-button">{{ $linkText }}</a>
+  </div>
+  {{ end }}
+</div>
+
+<style>
+.countdown-container {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(var(--color-primary-500), 0.1) 0%, rgba(var(--color-primary-600), 0.05) 100%);
+  border: 2px solid rgba(var(--color-primary-500), 0.2);
+}
+
+.countdown-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.0rem;
+  margin-top: 0.5rem;
+  color: rgb(var(--color-primary-500));
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10px;
+}
+
+.countdown-display {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  min-width: 100px;
+  background: rgba(var(--color-neutral-100), 0.5);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.countdown-unit:hover {
+  transform: translateY(-5px);
+}
+
+.countdown-number {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(var(--color-primary-600));
+  font-variant-numeric: tabular-nums;
+}
+
+.countdown-label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+  color: rgb(var(--color-neutral-600));
+  font-weight: 600;
+}
+
+.countdown-link {
+  margin-top: 2rem;
+}
+
+.countdown-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: rgb(var(--color-primary-600));
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-button:hover {
+  background: rgb(var(--color-primary-700));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.countdown-ended {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(var(--color-primary-500));
+  padding: 2rem;
+}
+
+@media (max-width: 640px) {
+  .countdown-display {
+    gap: 1rem;
+  }
+  
+  .countdown-unit {
+    min-width: 70px;
+    padding: 0.75rem;
+  }
+  
+  .countdown-number {
+    font-size: 2rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.75rem;
+  }
+}
+</style>
+
+<script>
+(function() {
+  const containerId = "{{ $uniqueId }}";
+  const timezone = "{{ $timezone }}";
+  const dateString = "{{ $date }}";
+  
+  const container = document.getElementById(containerId);
+  const displayElement = container.querySelector('.countdown-display');
+  
+  // Multiple parsing strategies
+  function parseEventDate(dateStr) {
+    // Strategy 1: Try ISO format with T
+    let date = new Date(dateStr.replace(' ', 'T'));
+    if (!isNaN(date.getTime())) return date.getTime();
+    
+    // Strategy 2: Try direct parsing
+    date = new Date(dateStr);
+    if (!isNaN(date.getTime())) return date.getTime();
+    
+    // Strategy 3: Manual parsing YYYY-MM-DD HH:MM:SS
+    const parts = dateStr.match(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2}):(\d{2})/);
+    if (parts) {
+      date = new Date(
+        parseInt(parts[1]), // year
+        parseInt(parts[2]) - 1, // month (0-indexed)
+        parseInt(parts[3]), // day
+        parseInt(parts[4]), // hour
+        parseInt(parts[5]), // minute
+        parseInt(parts[6])  // second
+      );
+      if (!isNaN(date.getTime())) return date.getTime();
+    }
+    
+    return null;
+  }
+  
+  const eventDate = parseEventDate(dateString);
+  
+  // Debug logging
+  console.log('Event date string:', dateString);
+  console.log('Parsed event timestamp:', eventDate);
+  console.log('Parsed event date:', eventDate ? new Date(eventDate) : 'FAILED TO PARSE');
+  
+  if (!eventDate || isNaN(eventDate)) {
+    displayElement.innerHTML = '<div class="countdown-ended">⚠️ Error: Invalid date format. Use YYYY-MM-DD HH:MM:SS</div>';
+    return;
+  }
+  
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+    
+    if (distance < 0) {
+      displayElement.innerHTML = '<div class="countdown-ended">🎉 Event has started!</div>';
+      return;
+    }
+    
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    displayElement.innerHTML = `
+      <div class="countdown-unit">
+        <span class="countdown-number">${days}</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-number">${hours}</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-number">${minutes}</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-number">${seconds}</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    `;
+  }
+  
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+})();
+</script>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Cloud Native Wermland</title>
+    <link>https://cloudnative.se/tags/</link>
+    <description>Recent content in Tags on Cloud Native Wermland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>leojordansson@gmail.com (Cloud Native Wermland)</managingEditor>
+    <webMaster>leojordansson@gmail.com (Cloud Native Wermland)</webMaster>
+    <copyright>© 2025 Cloud Native Wermland</copyright>
+    <atom:link href="https://cloudnative.se/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>

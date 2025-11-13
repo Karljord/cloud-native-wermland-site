@@ -1,0 +1,22 @@
+/*.sponsor-logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s;
+}
+
+.sponsor-logo:hover {
+  transform: scale(1.05);
+}*/
+
+.sponsor-card {
+  min-height: 150px;
+  transition: all 0.3s ease;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-4px);
+}

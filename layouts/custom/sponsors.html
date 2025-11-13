@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="max-w-7xl mx-auto px-4 py-12">
+  <header class="mb-12 text-center">
+    <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
+    {{ with .Content }}
+    <div class="prose prose-lg mx-auto">
+      {{ . }}
+    </div>
+    {{ end }}
+  </header>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    {{ range site.Data.sponsors.sponsors }}
+    <a href="{{ .url }}" target="_blank" rel="noopener" 
+       class="bg-white dark:bg-neutral-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex items-center justify-center group">
+      <img src="{{ .logo }}" 
+           alt="{{ .name }}" 
+           class="max-w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300"
+           style="max-height: 100px;">
+    </a>
+    {{ end }}
+  </div>
+</article>
+{{ end }}
