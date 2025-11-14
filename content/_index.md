@@ -30,7 +30,9 @@ What happens to platform engineering when LLMs become one of the primary consume
 
 * * *
 
-** TBA **
+**Speaker:** Fredrik Steen
+
+**Title:** *When Your Cloud Won’t Do UDP: Building a K8s Node Watcher*
 
 * * *
 
