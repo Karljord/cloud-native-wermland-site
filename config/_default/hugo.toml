@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish" # UNCOMMENT THIS LINE
-baseURL = "https://cloudnative.se/cloud-native-wermland-site/"
+baseURL = "https://cloudnative.se/"
 defaultContentLanguage = "en"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
