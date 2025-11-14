@@ -2,10 +2,8 @@
 <article class="max-w-7xl mx-auto px-4 py-12">
   <header class="mb-12 text-center">
     <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
-    {{ with .Content }}
-    <div class="prose prose-lg mx-auto">
-      {{ . }}
-    </div>
+    {{ with .Description }}
+    <p class="text-xl text-neutral-600 dark:text-neutral-400">{{ . }}</p>
     {{ end }}
   </header>
 

@@ -32,14 +32,20 @@
   pre = "about"
   name = "About"
   pageRef = "about"
-  weight = 30
+  weight = 70
 
 
 [[main]]
   pre = "sponsors"
   name = "Sponsors"
   pageRef = "sponsors"
-  weight = 30
+  weight = 50
+
+[[main]]
+  pre = "contributors"
+  name = "Contributors"
+  pageRef = "contributors"
+  weight = 40
 
 #[[main]]
 #  pre = "gallery"
