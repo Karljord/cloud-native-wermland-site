@@ -179,3 +179,9 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [custom]
   css = ["css/custom.css"]
+
+[favicon]
+  logo = "logo.png"
+  shortcut = "logo.png"
+  appleTouchIcon = "logo.png"
+  safariPinnedTab = "logo.png"
