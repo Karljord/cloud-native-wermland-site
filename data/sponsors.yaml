@@ -1,4 +1,7 @@
 sponsors:
+  - name: "Varnish Software"
+    logo: "/images/varnish-logo.png"
+    url: "https://www.varnish-software.com"
   - name: "Redpill Linpro"
     logo: "/images/logo.png"
     url: "https://redpill-linpro.com"
