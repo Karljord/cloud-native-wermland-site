@@ -4,14 +4,15 @@ languageName = "English"
 weight = 1
 title = "Cloud Native Wermland"
 
+
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "images/cn-logo.png"
-  secondaryLogo = "images/cn-logo.png"
-  # description = "My awesome website"
+  logo = "cn-logo.png"
+  secondaryLogo = "cn-logo.png"
+  #description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
  [params.author]
