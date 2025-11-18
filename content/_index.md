@@ -3,6 +3,11 @@ type: "homepage"
 description: "Join us for our next event"
 ---
 
+Due to the high level of interest and the limited availability of space, registration is now closed.
+
+If you are still interested, please contact the organizer at leo@redpill-linpro.com.
+
+
 Redpill Linpro welcomes everyone to the third Cloud Native Wermland meetup in Karlstad!
 Meet like-minded people, talk about cloud native and open solutions, and make new connections over food and drinks. The event is open to everyone – regardless of previous experience or knowledge level.
 
