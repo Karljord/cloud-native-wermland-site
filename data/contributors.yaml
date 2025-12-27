@@ -1,6 +1,6 @@
 contributors:
   - name: "Leo Jordansson"
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQFQRk5TPN8ckg/profile-displayphoto-shrink_800_800/B4DZY4iZYDHAAc-/0/1744705263654?e=1764806400&v=beta&t=in3EhUFKpvkmOXlyxwSlspbcmXPKpAikrD8tCjHE4yk"
+    image: "/images/cont/leo.jpeg"
     company: "Redpill Linpro"
     role: "Platform Engineer and Organizer"
     github: "https://github.com/karljord"
@@ -8,14 +8,14 @@ contributors:
     linkedin: "https://www.linkedin.com/in/leo-jordansson-4330a5155/"
     
   - name: "Fredrik Steen"
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQF2bkyJoOaGew/profile-displayphoto-shrink_800_800/B4DZZ17cYSG4Ac-/0/1745735256309?e=1764806400&v=beta&t=XR5r0LeZ1iY66BXQsrwQgFOHlrRnA-1mECiYR1rwsTg"
+    image: "/images/cont/fredrik-steen.jpeg"
     company: "Varnish Software"
     role: "Cloud & Open-Source Architect/Expert"
     contribution: "Speaker"
     linkedin: "https://www.linkedin.com/in/fredriksteen/"
     
   - name: "Pontus Ullgren"
-    image: "https://media.licdn.com/dms/image/v2/C5103AQFfBuUiAMI8Sw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516298310356?e=1764806400&v=beta&t=j0w4ng_uvKRvanWukOE6kecS10nUnvO8kSbYXfMkA1E"
+    image: "https://images.teamtailor-cdn.com/images/s3/teamtailor-production/square_452-v4/image_uploads/1fc7bcd9-a5ca-4d72-a5fb-4a4a02f97629/original.png?outputFormat=webp"
     company: "Redpill Linpro"
     role: "sed/awk: changing the world one line at a time"
     linkedin: "https://www.linkedin.com/in/pontus-ullgren/"
@@ -23,35 +23,35 @@ contributors:
     github: "https://github.com/ullgren"
 
   - name: "Robert Mayer"
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQFPollKbp4avw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1658466990011?e=1764806400&v=beta&t=uQAA0-gb80yY2TrUDnRq_fpQPYy7wdZe9tBVgyb5du0"
+    image: "/images/cont/robert-mayer.jpeg"
     company: "ROMA IT"
     role: "Cloud & Integration Architect with focus on Observability"
     contribution: "Speaker"
     linkedin: "https://www.linkedin.com/in/robert-mayer-42a37532/"
 
   - name: "Elis Hirwing"
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQFmRzGx-lLDfQ/profile-displayphoto-shrink_800_800/B4DZbIwvEQHQAg-/0/1747124941631?e=1764806400&v=beta&t=_RaTlQiVv7E0YwD5lgRBl37j15Bx-UJ6-KXwXqQwNs4"
+    image: "/images/cont/elias-hirwing.jpeg"
     company: "TV.nu"
     role: "Lead Backend Developer på TNU Sweden AB, TV.nu"
     contribution: "Speaker"
     linkedin: "https://www.linkedin.com/in/elishirwing/"
 
   - name: "David Karlsson"
-    image: "https://media.licdn.com/dms/image/v2/C4D03AQHajBLwzPNaOg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1658300269077?e=1764806400&v=beta&t=B8ogJyNVRoCceNiXPfeV8oq7jNjgRRSWwcUN74LeKWA"
+    image: "/images/cont/david-karlsson.jpeg"
     company: "Docker, Inc"
     role: "Technical writer"
     contribution: "Speaker"
     linkedin: https://www.linkedin.com/in/dvdksn/
   
   - name: "Björn Johansson"
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQFayZPaJOwdsA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718554688067?e=1764806400&v=beta&t=1n5EhR9XZHJ2o0dCTtJFdvHJwDAEiM8FqEXTXpw_vxQ"
+    image: "/images/cont/björn-johansson.jpeg"
     company: "Storytel"
     role: "Senior Platform Engineer at Storytel | Building Developer Platforms"
     contribution: "Speaker"
     linkedin: https://www.linkedin.com/in/björn-johansson-b5a628121/
 
   - name: "Falko Fleßner"
-    image: "https://media.licdn.com/dms/image/v2/C5603AQF_4xPMr9oyow/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1602169968569?e=1764806400&v=beta&t=b5p9e_B5NcIw24ROubKtQ49B-Vjme3zmI6jdDq1TTqM"
+    image: "/images/cont/falco-f.jpeg"
     company: "Varnish Software"
     role: "Backend Developer"
     contribution: "Speaker"
