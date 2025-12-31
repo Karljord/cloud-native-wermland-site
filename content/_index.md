@@ -45,6 +45,6 @@ Within a month, MinIO went to a maintenance-only mode and ingress-nginx was disc
 
 
 **Summary:**
-TBA
+What does digital sovereignty actually mean in practice, beyond buzzwords and policy documents? This talk looks at control, transparency, and long-term resilience in cloud and platform choices. We will explore how open source, data location, vendor lock-in, and operational autonomy intersect, and where the trade-offs really are. Expect practical examples, a few uncomfortable questions, and some concrete takeaways on how to build systems you actually own and understand.
 
 
