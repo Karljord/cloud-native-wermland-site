@@ -8,7 +8,7 @@ Meet like-minded people, talk about cloud native and open solutions, and make ne
 
 
 {{< countdown 
-  date="2026-02-12T17:00:00"
+  date="2026-03-12T17:00:00"
   timezone="GMT-0500"
   title="February Meetup" 
   link="https://drive.redpill-linpro.com/apps/forms/s/aCLnio9gM9oKEk2KbdgmEcRi" 
