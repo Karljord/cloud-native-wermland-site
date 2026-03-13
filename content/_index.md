@@ -3,17 +3,21 @@ type: "homepage"
 description: "Join us for our next event"
 ---
 
-Varnish Software welcomes everyone to the fourth Cloud Native Wermland meetup in Karlstad!
-Meet like-minded people, talk about cloud native and open solutions, and make new connections over food and drinks. The event is open to everyone – regardless of previous experience or knowledge level.
+## Save the date! 
+### Next meetup
+### May 21st
+#### Time and place to be announced
+
 
 
 {{< countdown 
-  date="2026-03-12T17:00:00"
-  timezone="GMT-0500"
-  title="February Meetup" 
-  link="https://drive.redpill-linpro.com/apps/forms/s/aCLnio9gM9oKEk2KbdgmEcRi" 
-  linkText="Register Now" 
+  date="2026-05-21T17:00:00"
+  timezone="GMT-0100"
+  title="May Meetup"
 >}}
+
+
+Thank you to everyone who joined us for the fourth meetup! A special thanks to our speakers, David Hall, Johan Westin, and Falko Fleßner, and to our sponsor, Varnish Software. A success as usual! 
 
 
 ## Speakers 
