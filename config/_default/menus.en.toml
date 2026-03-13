@@ -34,6 +34,12 @@
   parent = "Events"
 
 [[main]]
+  name = "Mars 2026"
+  pageRef = "meetup-mars-2026"
+  weight = 20
+  parent = "Events"
+
+[[main]]
   pre = "about"
   name = "About"
   pageRef = "about"
