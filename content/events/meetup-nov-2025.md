@@ -2,7 +2,10 @@
 title: "November 2025 Meetup"
 type: "article"
 date: 2025-08-15
---- 
+---
+
+{{< carousel images="{https://drive.redpill-linpro.com/apps/photos/api/v1/publicPreview/2825769?x=2048&y=2048&token=yONeNB8ixzh6yj76dtt6kGaw9uyU5XL3,https://drive.redpill-linpro.com/apps/photos/api/v1/publicPreview/2825766?x=2048&y=2048&token=yONeNB8ixzh6yj76dtt6kGaw9uyU5XL3,https://drive.redpill-linpro.com/apps/photos/api/v1/publicPreview/2825775?x=2048&y=2048&token=yONeNB8ixzh6yj76dtt6kGaw9uyU5XL3,https://drive.redpill-linpro.com/apps/photos/api/v1/publicPreview/2825772?x=2048&y=2048&token=yONeNB8ixzh6yj76dtt6kGaw9uyU5XL3,}" >}}
+
 
 The third meetup was executed successfully, still amazing that we can gather almost 40 people under one roof to talk all things OSS and cloud native.
 

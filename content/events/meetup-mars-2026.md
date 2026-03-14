@@ -4,6 +4,7 @@ type: "article"
 date: 2026-03-13
 --- 
 
+{{< carousel images="{https://drive.redpill-linpro.com/apps/photos/api/v1/publicPreview/2825160?x=2048&y=2048&token=DHzgrNbLNpaQEh1X2TtsmsvOLBhyI352,https://drive.redpill-linpro.com/apps/photos/api/v1/publicPreview/2825190?x=2048&y=2048&token=DHzgrNbLNpaQEh1X2TtsmsvOLBhyI352,https://drive.redpill-linpro.com/apps/photos/api/v1/publicPreview/2825175?x=2048&y=2048&token=DHzgrNbLNpaQEh1X2TtsmsvOLBhyI352,https://drive.redpill-linpro.com/apps/photos/api/v1/publicPreview/2825187?x=2048&y=2048&token=DHzgrNbLNpaQEh1X2TtsmsvOLBhyI352}" >}}
 
 The fourth meetup was executed successfully, still amazing that we can gather so many people under one roof to talk all things OSS and cloud native.
 
