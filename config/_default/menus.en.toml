@@ -15,28 +15,29 @@
   weight = 10
 
 
-#[[main]]
-#  name = "May 2025"
-#  pageRef = "meetup-may-2025"
-#  weight = 10
-#  parent = "Events"
+[[main]]
+  name = "May 2025"
+  pageRef = "meetup-may-2025"
+  weight = 10
+  parent = "Events"
+
 
 [[main]]
   name = "Sep 2025"
   pageRef = "meetup-sep-2025"
-  weight = 20
+  weight = 11
   parent = "Events"
 
 [[main]]
   name = "Nov 2025"
   pageRef = "meetup-nov-2025"
-  weight = 20
+  weight = 12
   parent = "Events"
 
 [[main]]
   name = "Mars 2026"
   pageRef = "meetup-mars-2026"
-  weight = 20
+  weight = 13
   parent = "Events"
 
 [[main]]
