@@ -56,3 +56,17 @@ contributors:
     role: "Backend Developer"
     contribution: "Speaker"
     linkedin: "https://www.linkedin.com/in/falko-fleßner-35b2111b0/"
+
+  - name: "David Hall"
+    image: "/images/cont/david-hall.jpeg"
+    company: "Elastx"
+    role: "Cloud Architect"
+    contribution: "Speaker"
+    linkedin: "https://www.linkedin.com/in/mrdavidhall/"
+
+  - name: "Johan Westin"
+    image: "/images/cont/johan-westin.jpeg"
+    company: "Whitespace AB"
+    role: "CTO"
+    contribution: "Speaker"
+    linkedin: "https://www.linkedin.com/in/westinjohan/"
