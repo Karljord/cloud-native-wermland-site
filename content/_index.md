@@ -20,7 +20,7 @@ Containers, fast tvärtom  
 
 Containers byggdes för att paketera kod du litar på, så din applikation kör likadant överallt.
 Sandlådor löser det omvända problemet: hur man kör kod man inte litar på, utan att den tar sig ut.
-En kort introduktion till Docker Sandboxes (sbx) - vad det är, hur det skiljher sig från containers, och varför vi behöver dessa nu.
+En kort introduktion till Docker Sandboxes (sbx) - vad det är, hur det skiljer sig från containers, och varför vi behöver dessa nu.
 
 #### Fredrik Steen - Varnish  
 
