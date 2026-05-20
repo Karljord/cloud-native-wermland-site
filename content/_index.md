@@ -5,6 +5,27 @@ description: "Join us for our next event"
 
 Docker and Redpill Linpro welcomes everyone to the fifth Cloud Native Wermland meetup in Karlstad! Meet like-minded people, talk about cloud native and open solutions, and make new connections over food and drinks. The event is open to everyone, regardless of previous experience or knowledge level.
 
+### Speakers
+
+#### Johan Westin - Whitespace AB
+
+Vilket CNCF-projekt ska en ha te vad då?
+
+En snabb tur genom några av de mer udda CNCF-projekten och tittar på vilka problem de faktiskt löser. Allt vet vad helm och kubernetes är men vad finns det mer?
+
+
+#### David Karlsson -  Docker
+
+Containers, fast tvärtom  
+
+Containers byggdes för att paketera kod du litar på, så din applikation kör likadant överallt.
+Sandlådor löser det omvända problemet: hur man kör kod man inte litar på, utan att den tar sig ut.
+En kort introduktion till Docker Sandboxes (sbx) - vad det är, hur det skiljher sig från containers, och varför vi behöver dessa nu.
+
+#### Fredrik Steen - Varnish  
+
+What actually happens when you kubectl apply!?
+
 {{< countdown 
   date="2026-05-21T17:00:00"
   timezone="GMT-0100"
